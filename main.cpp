@@ -60,7 +60,11 @@ public:
         }
         
         col = matrix[0].size();
+
         dp.resize(row, vector<int>(col));
+        for (int k = 0; k < dp.size(); ++k) {
+            dp[k].resize(col);
+        }
         reset();
 
         int m = 0;
